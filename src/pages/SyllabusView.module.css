@@ -1,0 +1,187 @@
+.wrap {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ── 섹션 공통 ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--bg-sub);
+  margin: 0;
+}
+
+/* ── 기본 정보 그리드 ── */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.infoItem {
+  background: var(--bg-sub);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* 이메일 항목은 그리드 전체 너비 사용 */
+.fullWidth { grid-column: 1 / -1; flex-direction: row; align-items: center; gap: 16px; }
+
+.infoLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--divider);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.infoValue {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.emailLink {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+}
+.emailLink:hover { text-decoration: underline; }
+
+/* ── 점수 배분 ── */
+.scoringList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.scoringItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scoringLabel {
+  width: 90px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.barTrack {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-sub);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.scoringPercent {
+  width: 36px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+/* ── 출결·과제 정책 박스 ── */
+.policyBox {
+  background: var(--bg-sub);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.policyRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.policyKey {
+  width: 130px;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-base);
+}
+
+.policyVal {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.policyNote {
+  font-size: 12px;
+  color: var(--danger);
+  margin: 0;
+  padding-top: 6px;
+  border-top: 1px solid var(--divider);
+}
+
+.policyText {
+  font-size: 13px;
+  color: var(--text-dark);
+  line-height: 1.7;
+  background: var(--bg-sub);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin: 0;
+}
+
+/* ── 주차별 계획 ── */
+.weeklyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.weeklyItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--bg-sub);
+}
+.weeklyItem:last-child { border-bottom: none; }
+.weeklyItem:hover { background: #fafafa; }
+
+.weekBadge {
+  flex-shrink: 0;
+  width: 36px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+}
+
+.weekTopic {
+  font-size: 13px;
+  color: var(--text-dark);
+}

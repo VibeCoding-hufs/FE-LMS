@@ -1,0 +1,39 @@
+:root {
+  --primary:       #3C8794;
+  --primary-light: #5FB1BF;
+  --primary-dark:  #2e6b76;
+  --bg-body:       #EDEDED;
+  --bg-card:       #FFFFFF;
+  --bg-sub:        #F1F1F1;
+  --bg-input:      #F8F8F8;
+  --text-base:     #666666;
+  --text-dark:     #333333;
+  --divider:       #B6B6B6;
+  --footer-bg:     #4C4C4C;
+  --danger:        #E05252;
+  --warning:       #E87B3B;
+  --radius:        6px;
+  --shadow:        0 2px 8px rgba(0, 0, 0, 0.08);
+  --font:          'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font);
+  font-size: 13px;
+  color: var(--text-base);
+  background: var(--bg-body);
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 150vh;
+}
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { cursor: pointer; font-family: var(--font); }
+ul { list-style: none; padding: 0; margin: 0; }

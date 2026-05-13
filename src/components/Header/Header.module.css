@@ -1,0 +1,100 @@
+.header {
+  background: #fff;
+  border-bottom: 2px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.inner {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.lang select {
+  border: 1px solid var(--divider);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+  font-size: 12px;
+  color: var(--text-base);
+  background: var(--bg-input);
+  cursor: pointer;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.symbol {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  letter-spacing: 2px;
+}
+
+.text strong {
+  display: block;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.text span {
+  font-size: 11px;
+  color: var(--text-base);
+}
+
+.loginBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #fff;
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius);
+  color: var(--primary);
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.loginBtn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.userArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.logoutBtn {
+  padding: 7px 14px;
+  background: none;
+  border: 1.5px solid var(--divider);
+  border-radius: var(--radius);
+  color: var(--text-base);
+  font-size: 12px;
+  font-family: var(--font);
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.logoutBtn:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}

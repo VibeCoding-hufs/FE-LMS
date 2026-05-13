@@ -1,0 +1,116 @@
+.timetable {
+  overflow-x: auto;
+}
+
+/* ── 헤더 ── */
+.headerRow {
+  display: flex;
+  margin-bottom: 2px;
+}
+
+.cornerCell {
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.dayHeader {
+  flex: 1;
+  text-align: center;
+  padding: 6px 4px;
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--bg-sub);
+  color: var(--text-dark);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.dayDate {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+.todayHeader {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* ── 그리드 본체 ── */
+.gridBody {
+  display: flex;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.timeGutter {
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.hourLabel {
+  height: 60px;
+  font-size: 10px;
+  color: #bbb;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding-right: 6px;
+  padding-top: 3px;
+}
+
+.dayCol {
+  flex: 1;
+  position: relative;
+  border-left: 1px solid #e8e8e8;
+}
+
+.dayCol:last-child {
+  border-right: 1px solid #e8e8e8;
+}
+
+.hourLine {
+  height: 60px;
+  border-top: 1px solid #efefef;
+  pointer-events: none;
+}
+
+/* ── 수업 블록 ── */
+.classBlock {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  border-radius: 4px;
+  padding: 4px 5px;
+  font-size: 10px;
+  line-height: 1.4;
+  overflow: hidden;
+  border-left: 3px solid var(--primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.classBlock strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.time,
+.room {
+  display: block;
+  font-size: 10px;
+  color: var(--text-base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.color1 { border-left-color: #3C8794; background: #eef7f9; }
+.color2 { border-left-color: #7b68c8; background: #f0eefb; }
+.color3 { border-left-color: #e87b3b; background: #fdf1ea; }
+.color4 { border-left-color: #3b9e6b; background: #eaf6f0; }
+.color5 { border-left-color: #cc5555; background: #fceaea; }
