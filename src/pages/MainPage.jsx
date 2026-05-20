@@ -1,34 +1,18 @@
-import CalendarWidget     from '../components/CalendarWidget/CalendarWidget'
-import EnrolledCourses    from '../components/EnrolledCourses/EnrolledCourses'
-import Timetable          from '../components/Timetable/Timetable'
-import DdayTodo           from '../components/DdayTodo/DdayTodo'
-import Footer             from '../components/Footer/Footer'
-import { COURSES, getAssignmentsByDate } from '../data/courses'
-import styles             from './MainPage.module.css'
+import Calender from '../components/Calender/Calender'
+import Footer from '../components/Footer/Footer'
+import SubjectList from '../components/SubjectList/SubjectList'
+import styles from './MainPage.module.css'
 
-// COURSES 객체를 배열로 변환하여 수강 과목 목록으로 사용
-const courses = Object.values(COURSES)
-
-// 과제를 마감일별로 그룹화하여 달력 위젯에 전달
-const assignmentsByDate = getAssignmentsByDate()
-
+// 메인 페이지: 수강 과목 목록, 캘린더 등을 보여주는 홈 화면
 export default function MainPage() {
   return (
     <>
       <div className={styles.wrap}>
-
         <main className={styles.main}>
-          <CalendarWidget assignmentsByDate={assignmentsByDate} />
-          <EnrolledCourses courses={courses} />
-          <Timetable />
+          <Calender />
+          <SubjectList/>
         </main>
-
-        <aside className={styles.sidebar}>
-          <DdayTodo />
-        </aside>
-
       </div>
-
       <Footer />
     </>
   )

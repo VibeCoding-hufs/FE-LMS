@@ -1,0 +1,52 @@
+.SignupBox{
+    border: 1px solid #e0e0e0;
+    width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.SignupTitle {
+    font-size: 24px;
+    font-weight: 700;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    color: #333;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+
+.SignupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* label과 input을 한 줄로 정렬 */
+.usernamebox,
+.passwordbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.usernamebox label,
+.passwordbox label {
+    width: 80px;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.usernamebox input,
+.passwordbox input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}

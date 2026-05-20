@@ -19,10 +19,6 @@ build/
 *.njsproj
 *.sln
 
-# OS 자동 생성 파일
-.DS_Store
-Thumbs.db
-desktop.ini
 
 # 로그
 *.log

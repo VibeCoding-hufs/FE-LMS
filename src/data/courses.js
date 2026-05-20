@@ -277,21 +277,3 @@ export const COURSES = {
     },
   },
 }
-
-// 모든 과제를 마감일(YYYY-MM-DD) 기준으로 그룹화하여 반환하는 함수
-export function getAssignmentsByDate() {
-  const byDate = {}
-  Object.values(COURSES).forEach(course => {
-    course.assignments.forEach(assignment => {
-      const key = assignment.due
-      if (!byDate[key]) byDate[key] = []
-      byDate[key].push({
-        courseId:      course.id,
-        courseSubject: course.subject,
-        color:         course.color,
-        ...assignment,
-      })
-    })
-  })
-  return byDate
-}

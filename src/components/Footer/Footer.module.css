@@ -37,26 +37,3 @@
   margin-top: 8px;
   text-decoration: underline;
 }
-
-.nav {
-  display: flex;
-  gap: 32px;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.col strong {
-  color: #ddd;
-  font-size: 12px;
-  margin-bottom: 4px;
-}
-
-.col a {
-  font-size: 11px;
-  color: #aaa;
-}
-.col a:hover { color: #fff; }
