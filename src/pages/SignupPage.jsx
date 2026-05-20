@@ -20,7 +20,7 @@ function SignupPage() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://kikoky.duckdns.org:8000/accounts/register/",
+        "https://kikoky.duckdns.org/accounts/register/",
         { login_id: id, name: username, password, email, role, department: dept }
       );
       

@@ -17,7 +17,7 @@ function LoginPage() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://kikoky.duckdns.org:8000/accounts/login/",
+        "https://kikoky.duckdns.org/accounts/login/",
         { login_id: id, password }
       );
       // 서버에서 받은 userID를 브라우저에 저장(이거 안배움 바이브코딩)
