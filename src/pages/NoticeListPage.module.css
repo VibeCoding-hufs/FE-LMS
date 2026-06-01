@@ -1,0 +1,120 @@
+.wrap {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 0 30px;
+}
+
+.body {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.left {
+  margin-top: 55px;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;
+  min-width: 0;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.spacer {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+/* 상단 뒤로가기 + 제목 영역 */
+.topBar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.back {
+  font-size: 13px;
+  color: #888;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #1a5bbf;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 공지 목록 박스 */
+.box {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.list {
+  padding: 8px 0;
+}
+
+/* 각 공지 항목 */
+.item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #333;
+  gap: 8px;
+}
+
+.link:hover {
+  background: #f5f8ff;
+}
+
+/* 중요 뱃지 */
+.important {
+  flex-shrink: 0;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #fff0f0;
+  color: #cc5555;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* 공지 제목 */
+.noticeTitle {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* 날짜 */
+.date {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.loading, .empty {
+  padding: 20px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
+

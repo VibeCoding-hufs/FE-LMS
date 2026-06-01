@@ -1,0 +1,114 @@
+.box {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #f5f5f5;
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #e87b3b;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* 시험 일정 리스트 */
+.examList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.examItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #fff8f0;
+  border-left: 3px solid #e87b3b;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.week {
+  min-width: 48px;
+  font-weight: 700;
+  color: #e87b3b;
+}
+
+.topic { color: #444; }
+
+.empty { font-size: 13px; color: #aaa; }
+
+/* 성적 비중 표 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  table-layout: fixed;
+}
+
+.th {
+  padding: 8px 10px;
+  background: #f5f5f5;
+  font-weight: 700;
+  color: #555;
+  text-align: left;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tr:nth-child(even) { background: #fafafa; }
+
+.td {
+  padding: 7px 10px;
+  color: #444;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tdRight {
+  padding: 7px 10px;
+  color: #e87b3b;
+  font-weight: 700;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: right;
+  width: 60px;
+}
+
+.policy {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  background: #fafafa;
+  border-radius: 6px;
+  padding: 10px 12px;
+}

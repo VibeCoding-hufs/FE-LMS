@@ -1,0 +1,93 @@
+.container {
+  width: 200px;
+  flex-shrink: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.header {
+  padding: 12px 16px;
+  background: #f5f5f5;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.list {
+  padding: 8px 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+}
+
+/* 체크 완료된 항목흐리게 */
+.itemDone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+.checkbox {
+  cursor: pointer;
+  accent-color: #3C8794;
+  flex-shrink: 0;
+}
+
+.empty {
+  padding: 12px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.title {
+  flex: 1;
+  color: #444;
+}
+
+
+
+.tagAssign {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #e8f4f6;
+  color: #3C8794;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tagTeam {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #f3f0ff;
+  color: #7b68c8;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tagExam {
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #fff0f0;
+  color: #cc5555;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.dday {
+  color: #e05252;
+  font-weight: 700;
+  font-size: 12px;
+}
